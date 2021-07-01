@@ -28,6 +28,7 @@ end
 
 include("performance_profiles.jl")
 include("data_profiles.jl")
+include("scores.jl")
 include("requires.jl")
 
 end
