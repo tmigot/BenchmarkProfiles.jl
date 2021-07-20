@@ -1,3 +1,6 @@
+"""
+I should definitely write a doc for that
+"""
 function compute_profile_integral(T, logscale=logscale, sampletol=sampletol, drawtol=drawtol)
   (x_plot, y_plot, max_ratio) = performance_profile_data(T, logscale=logscale, sampletol=sampletol, drawtol=drawtol)
   N = size(T, 2)
