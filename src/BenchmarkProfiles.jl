@@ -28,6 +28,12 @@ end
 
 include("performance_profiles.jl")
 include("data_profiles.jl")
+
+function powertick(s::AbstractString)
+  codes = Dict(collect("1234567890") .=> collect("¹²³⁴⁵⁶⁷⁸⁹⁰"))
+  return "2" * map(c -> codes[c], s) # powertick("15") = 2¹⁵
+end
+
 include("requires.jl")
 
 end
