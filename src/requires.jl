@@ -36,6 +36,9 @@ function __init__()
       end
       if logscale
         for xt in Plots.xticks(profile)
+          @show xt[1]
+          @show xt[2]
+          @show  map(x -> powertick(x), xt[2])
           Plots.plot!(xticks = (xt[1], map(x -> powertick(x), xt[2])))
           Plots.plot!(xtickfontsize=10)
         end
